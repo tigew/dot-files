@@ -1,3 +1,9 @@
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = https://github.com/syl20bnr/spacemacs
+[submodule "tools/ycmd"]
+	path = tools/ycmd
+	url = https://github.com/Valloric/ycmd
+[submodule "tools/omnisharp-server"]
+	path = tools/omnisharp-server
+	url = https://github.com/OmniSharp/omnisharp-server
