@@ -3,21 +3,20 @@ mah dotfiles
 
 ### Things needed to instal (Will clean up later)
 
-* Fonts
-
 * Alfred 2
 * Android Studio
 * Atom
 * Brackets
 * Brew
 * Cakebrew
-* Cask?
+* Cask
 * Copy/Syncthing
 * Dash
 * Dr.Cleaner
 * Emacs
 * Evernote
 * Firefox
+* Fonts
 * GalaxyClient
 * Github Desktop
 * Gitup
