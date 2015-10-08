@@ -8,7 +8,6 @@
 .PyCharm*
 .pia_manager_crash.log
 .python-eggs/
-.emacs.d/
 .semantic-highlight-cache
 .zcompdump*
 .zprofile
