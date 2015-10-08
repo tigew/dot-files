@@ -10,6 +10,7 @@ mah dotfiles
 * Brew
 * Cakebrew
 * Cask
+* Cask/fonts
 * Copy/Syncthing
 * Dash
 * Dr.Cleaner
@@ -45,3 +46,4 @@ mah dotfiles
 * Xamarin
 * Xcode
 * uTorrent
+* zsh
