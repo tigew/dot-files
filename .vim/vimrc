@@ -1,0 +1,159 @@
+" Plugins {{{
+
+call plug#begin()
+
+Plug 'ConradIrwin/vim-bracketed-paste'
+Plug 'Shutnik/jshint2.vim'
+Plug 'SirVer/ultisnips'
+Plug 'Valloric/YouCompleteMe'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'airblade/vim-gitgutter'
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'davidhalter/jedi-vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'ervandew/supertab'
+Plug 'gcmt/wildfire.vim'
+Plug 'honza/vim-snippets'
+Plug 'jaxbot/semantic-highlight.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'joom/vim-commentary'
+Plug 'kien/ctrlp.vim'
+Plug 'kristijanhusak/vim-multiple-cursors'
+Plug 'marcweber/vim-addon-mw-utils'
+Plug 'mattn/emmet-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'skammer/vim-css-color'
+Plug 'szw/vim-ctrlspace'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/Align'
+Plug 'wesQ3/vim-windowswap'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'FelikZ/ctrlp-py-matcher'
+Plug 't9md/vim-choosewin'
+Plug 'tpope/vim-markdown'
+
+call plug#end()            " required
+" }}}
+
+" Plugin Settings {{{
+let g:UltiSnipsExpandTrigger="<Leader><Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<Leader>e"
+let g:UltiSnipsJumpForwardTrigger="<Leader>w"
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_section_y = '%{strftime("%c")}'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:solarized_termcolors=256
+let g:windowswap_map_keys = 0 "prevent default bindings
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+map <Leader>[ :NERDTreeToggle<CR>
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+nmap  -  <Plug>(choosewin)
+let g:choosewin_overlay_enable = 1
+" }}}
+
+" General (lag tab) {{{
+
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+set colorcolumn=80                            " 80 character column
+set fullscreen                                " force vim to load as full screen
+set background=dark                           " makes shit dark as fuck
+colorscheme solarized                         " colortheme
+set nocompatible                              " Changes a lot of shit, refer to help if confused
+set foldmethod=marker                         " How folds are marked
+set linebreak                                 " Changed linebreak behavior, undetered if I want to keep
+set number                                    " Display line number
+set hidden                                    " Voodoo, refer to help if needed
+set laststatus=2                              " control option to how the status line is shown
+set t_Co=256                                  " number of colors, not sure if needed
+syntax on                                     " display syntax, no shit
+filetype plugin indent on                     " Not sure if needed
+set encoding=utf-8                            " set encoding to utf-8
+set fileencodings=utf-8                       " set encoding to utf-8
+set autoindent                                " preserves indent level when moving lines
+set smartindent                               " like the former but smarterer
+set cindent                                   " see help
+set expandtab                                 " uses spaces when tabing
+set smarttab                                  " Tab on drugs
+set shiftwidth=2                              " how many spaces tab does
+set softtabstop=2                             " how many spaces tab does
+set tabstop=2                                 " how many spaces tab does
+set wildignore=*.pyc                          " Global ignore list, this dosn't hurt nor seems to help
+set ignorecase                                " search related
+set smartcase                                 " overrides if capital is found
+set hlsearch                                  " hilight searches
+set incsearch                                 " search in realtime
+set shiftround                                " magic?
+set history=1000                              " History level saved
+set undolevels=1000                           " undo level saved
+set noswapfile                                " Gets rid of swap file, I'm going to be sad about this one day
+set nobackup                                  " see previous
+set linespace=3                               " number of pixels between lines
+set cursorline                                " Highlight current line
+set guifont=Source_Code_Pro_for_Powerline:h13 " font
+set splitbelow
+set splitright
+
+" Remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+" }}}
+
+" Some Useful Key Mappings {{{
+
+"Deselecting highlights
+nmap <Leader>x :let @/=''<CR>
+
+"System clipboard
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+"split remaps
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"Keep the cursor in the same place after yank
+vmap y ygv<Esc>
+
+"Reload vimrc
+nmap <F5> :source ~/.vimrc<CR>
+
+"Keep selection after indent
+vnoremap > ><CR>gv
+vnoremap < <<CR>gv
+
+"Remake create splits
+nmap <silent> <Leader>s :split<CR>
+nmap <silent> <Leader>v :vsplit<CR>
+
+"Mapping to open vimrc
+command Vrc e ~/.vim/vimrc
+
+" }}}
+
+

@@ -1,0 +1,8 @@
+Add description on each plugin so I understand fully what each one
+does and how to fully utilize them all
+
+
+really do the above
+need to do more syntastic checking on how to get it to work
+
+switch from ctrlp to fzf, because you can do up dir lookups
