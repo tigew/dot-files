@@ -38,7 +38,9 @@ mah dotfiles
 * SmartGit
 * Spectacle
 * Spotify
-* Steam Sublime
+* Steam 
+* Sublime
+* syncthing
 * Thunderbird
 * Tower
 * VLC
