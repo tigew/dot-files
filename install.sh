@@ -44,6 +44,11 @@ brew cask install tower
 brew cask install utorrent
 brew cask install visual-studio-code
 brew cask install vlc
+brew cask install xquartz
+brew cask intsall gog-galaxy
+
+# In between stuff
+defaults write org.vim.MacVim MMNativeFullScreen 0 # fix for macvim fullscreen
 
 # brew cask fonts
 brew tap caskroom/fonts

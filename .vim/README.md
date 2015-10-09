@@ -1,4 +1,4 @@
-vim-starter
+vim dot-file
 ===========
 
 My Vim dotfiles, an evolving document that gets done what I need.
