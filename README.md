@@ -1,13 +1,11 @@
 # dot-files
 mah dotfiles
 
-### Things needed to instal (Will clean up later)
+### Install the old fasion way
 
-* Dr.Cleaner
-* HomeBudgetLite
-* MightyText
-* PDF Reader X
-* Popcorn
-* Qt
-* Xamarin
-* Xcode
+| App Store          | Download from Internet | 
+|:------------------:|:----------------------:|
+| Dr.Cleaner         | MightyText             | 
+| Home Budget Light  | Popcorn                | 
+| PDF Reader X       | Qt                     |
+| Xcode              | Xamarin                |
