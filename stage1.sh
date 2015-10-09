@@ -59,8 +59,7 @@ brew cask install font-inconsolata-for-powerline
 brew cask install font-source-code-pro-for-powerline
 
 # zsh
-# TODO(Travis): change this to a manual install
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s /bin/zsh
 
 #Vim stuff, do this last
 cd ~/.vim && curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
