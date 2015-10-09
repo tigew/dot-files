@@ -75,7 +75,11 @@ let g:choosewin_overlay_enable = 1
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 set colorcolumn=80                            " 80 character column
-set fullscreen                                " force vim to load as full screen
+
+if has("gui_macvim")
+    set fullscreen                            " force vim to load as full screen
+endif
+
 set background=dark                           " makes shit dark as fuck
 colorscheme solarized                         " colortheme
 set nocompatible                              " Changes a lot of shit, refer to help if confused
