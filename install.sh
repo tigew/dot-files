@@ -1,4 +1,8 @@
 #!/bin/sh
+
+# git submodules
+git submodule foreach git pull
+
 # brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
