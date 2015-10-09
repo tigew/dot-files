@@ -22,7 +22,7 @@ brew cask install evernote
 brew cask install firefox
 brew cask install github-desktop
 brew cask install gitup
-brew cask intsall gog-galaxy
+brew cask install gog-galaxy
 brew cask install intellij-idea-ce
 brew cask install keepassx
 brew cask install libreoffice
