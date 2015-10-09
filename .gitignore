@@ -3,7 +3,6 @@
 .pia_manager/
 .Xauthority
 .DS_Store
-.oh-my-zsh/
 .IdeaIC*
 .PyCharm*
 .pia_manager_crash.log
