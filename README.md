@@ -5,10 +5,10 @@ mah dotfiles
 
 | App Store          | Download from Internet | 
 |:------------------:|:----------------------:|
-| Dr.Cleaner         | MightyText             | 
-| Home Budget Light  | Popcorn                | 
-| PDF Reader X       | Qt                     |
-| Xcode              | Xamarin                |
+| Home Budget Light  | MightyText             | 
+| PDF Reader X       | Popcorn                |
+| Xcode              | Qt                     |
+|                    | Xamarin                |
 
 # Install steps
 
