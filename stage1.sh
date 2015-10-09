@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# git submodules
-git submodule foreach git pull
-
 # brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install ag
+brew install cmake
 
 # brew cask add if checks with tags so we can do
 # an all install or just a force update sections
@@ -47,6 +47,7 @@ brew cask install utorrent
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install xquartz
+brew cask install mono-mdk
 
 # In between stuff
 defaults write org.vim.MacVim MMNativeFullScreen 0 # fix for macvim fullscreen
