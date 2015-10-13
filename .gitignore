@@ -4,6 +4,7 @@
 .Xauthority
 .DS_Store
 .IdeaIC*
+.clion*/
 .PyCharm*
 .muttator/
 .pia_manager_crash.log
