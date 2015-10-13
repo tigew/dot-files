@@ -5,6 +5,7 @@
 .DS_Store
 .IdeaIC*
 .PyCharm*
+.muttator/
 .pia_manager_crash.log
 .python-eggs/
 .semantic-highlight-cache
