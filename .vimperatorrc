@@ -1,0 +1,6 @@
+"3.10.1 (created: 2015/08/25 00:41:59)
+
+set "editor=bash -lc \"mvim -f \\$*\" mvim "
+source! /Users/tigew/.vimperatorrc.local
+
+" vim: set ft=vimperator:
