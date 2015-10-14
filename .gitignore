@@ -3,6 +3,8 @@
 .pia_manager/
 .Xauthority
 .DS_Store
+.dnx/
+.npm/
 .IdeaIC*
 .clion*/
 .PyCharm*
