@@ -37,6 +37,7 @@ Plug 'vim-scripts/Align'                                           " Aligns on a
 Plug 'wesQ3/vim-windowswap'                                        " Swap 2 window positions without ruining layout, not working
 Plug 'whatyouhide/vim-gotham'                                      " Sweet dark theme
 
+" plugins start line 5
 call plug#end()            " required
 " }}}
 
