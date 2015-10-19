@@ -5,6 +5,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew install ag --verbose
 brew install cmake --verbose
+brew install ctags --verbose
 
 # brew cask add if checks with tags so we can do
 # an all install or just a force update sections
@@ -61,6 +62,6 @@ brew cask install font-source-code-pro-for-powerline
 # zsh
 chsh -s /bin/zsh
 
-#Vim stuff, do this last
+# Vim stuff, do this last
 cd ~/.vim && curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && mvim +PlugInstall
