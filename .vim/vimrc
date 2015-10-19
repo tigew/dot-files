@@ -2,42 +2,39 @@
 
 call plug#begin()
 
-Plug 'ConradIrwin/vim-bracketed-paste'
-Plug 'FelikZ/ctrlp-py-matcher'
-Plug 'Shutnik/jshint2.vim'
-Plug 'SirVer/ultisnips'
-Plug 'Valloric/YouCompleteMe'
-Plug 'Yggdroot/indentLine'
-Plug 'airblade/vim-gitgutter'
-Plug 'davidhalter/jedi-vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'ervandew/supertab'
-Plug 'gcmt/wildfire.vim'
-Plug 'honza/vim-snippets'
-Plug 'itchyny/lightline.vim'
-Plug 'jaxbot/semantic-highlight.vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'joom/vim-commentary'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-Plug 'junegunn/fzf.vim'
-Plug 'kien/ctrlp.vim'
-Plug 'kristijanhusak/vim-multiple-cursors'
-Plug 'majutsushi/tagbar'
-Plug 'marcweber/vim-addon-mw-utils'
-Plug 'mattn/emmet-vim'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
-Plug 'skammer/vim-css-color'
-Plug 'szw/vim-ctrlspace'
-Plug 't9md/vim-choosewin'
-Plug 'tomtom/tlib_vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-markdown'
-Plug 'tpope/vim-surround'
-Plug 'vim-scripts/Align'
-Plug 'wesQ3/vim-windowswap'
-Plug 'whatyouhide/vim-gotham'
+Plug 'FelikZ/ctrlp-py-matcher'                                     " CrtlP matcher writen in python
+Plug 'SirVer/ultisnips'                                            " Snippits
+Plug 'Valloric/YouCompleteMe'                                      " Realtime autocomplete engine for vim
+Plug 'airblade/vim-gitgutter'                                      " Displays what lines have changed (git)
+Plug 'davidhalter/jedi-vim'                                        " Autocomplete engine for python
+Plug 'easymotion/vim-easymotion'                                   " jump search in vim, spacemacs spc-spc-letter
+Plug 'ervandew/supertab'                                           " Allows the use of tab to do completions
+Plug 'gcmt/wildfire.vim'                                           " Easier selection of text blocks
+Plug 'honza/vim-snippets'                                          " Snippits
+Plug 'itchyny/lightline.vim'                                       " Badass bottom line in vim
+Plug 'jaxbot/semantic-highlight.vim'                               " Rainbow variables
+Plug 'jiangmiao/auto-pairs'                                        " Insert or delete brackets in pair
+Plug 'jistr/vim-nerdtree-tabs'                                     " Nerd tree for tabs, still debating if I want this at all
+Plug 'tpope/vim-commentary'                                        " Comments on drugs
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' } " Lazy way to install fzf
+Plug 'junegunn/fzf.vim'                                            " fzf commands for vim beyond ':FZF'
+Plug 'kien/ctrlp.vim'                                              " Fuzzy file searcher
+Plug 'kristijanhusak/vim-multiple-cursors'                         " Name is self explainitory
+Plug 'majutsushi/tagbar'                                           " ctags view for files
+Plug 'marcweber/vim-addon-mw-utils'                                " I'm not really sure, but it's not hurting anything
+Plug 'mattn/emmet-vim'                                             " HTML snippet short cut, see git repo for more info
+Plug 'scrooloose/nerdtree'                                         " File explorer
+Plug 'scrooloose/syntastic'                                        " Linter for every language pretty much
+Plug 'skammer/vim-css-color'                                       " Displays the color of the css on it itself
+Plug 'szw/vim-ctrlspace'                                           " Better tabswitcher, consider changing to leader
+Plug 't9md/vim-choosewin'                                          " Much faster split navigation
+Plug 'tomtom/tlib_vim'                                             " Likely needed for another plugin, don't remove
+Plug 'tpope/vim-fugitive'                                          " Git wrapper for vim
+Plug 'tpope/vim-markdown'                                          " Markdown stuffs for vim
+Plug 'tpope/vim-surround'                                          " Self explainitory, surround stuff easier
+Plug 'vim-scripts/Align'                                           " Aligns on a specified character, look at repo for more info
+Plug 'wesQ3/vim-windowswap'                                        " Swap 2 window positions without ruining layout, not working
+Plug 'whatyouhide/vim-gotham'                                      " Sweet dark theme
 
 call plug#end()            " required
 " }}}
