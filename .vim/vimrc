@@ -6,7 +6,6 @@ Plug 'FelikZ/ctrlp-py-matcher'                                     " CrtlP match
 Plug 'SirVer/ultisnips'                                            " Snippits
 Plug 'Valloric/YouCompleteMe'                                      " Realtime autocomplete engine for vim
 Plug 'airblade/vim-gitgutter'                                      " Displays what lines have changed (git)
-Plug 'davidhalter/jedi-vim'                                        " Autocomplete engine for python
 Plug 'easymotion/vim-easymotion'                                   " jump search in vim, spacemacs spc-spc-letter
 Plug 'ervandew/supertab'                                           " Allows the use of tab to do completions
 Plug 'gcmt/wildfire.vim'                                           " Easier selection of text blocks
@@ -54,6 +53,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 let g:tagbar_ctags_bin = '/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 map <Leader>[ :NERDTreeToggle<CR>
 nmap <Leader>] :TagbarToggle<CR>
+let g:EclimCompletionMethod = 'omnifunc'
 
 " syntastic crap
 let g:syntastic_always_populate_loc_list = 1
@@ -118,7 +118,7 @@ set noswapfile                                " Gets rid of swap file, I'm going
 set nobackup                                  " see previous
 set linespace=3                               " number of pixels between lines
 set cursorline                                " Highlight current line
-set guifont=Source_Code_Pro_for_Powerline:h13 " font
+set guifont=Source_Code_Pro_for_Powerline:h12 " font
 set splitbelow
 set splitright
 
