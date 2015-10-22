@@ -22,7 +22,6 @@ Plug 'marcweber/vim-addon-mw-utils'                                " I'm not rea
 Plug 'mattn/emmet-vim'                                             " HTML snippet short cut, see git repo for more info
 Plug 'osyo-manga/vim-over'                                         " Makes find and replace in vim god mode by showing preview
 Plug 'scrooloose/nerdtree'                                         " File explorer
-Plug 'scrooloose/syntastic'                                        " Linter for every language pretty much
 Plug 'skammer/vim-css-color'                                       " Displays the color of the css on it itself
 Plug 'szw/vim-ctrlspace'                                           " Better tabswitcher, consider changing to leader
 Plug 't9md/vim-choosewin'                                          " Much faster split navigation
@@ -54,11 +53,6 @@ map <Leader>[ :NERDTreeToggle<CR>
 nmap <Leader>] :TagbarToggle<CR>
 let g:EclimCompletionMethod = 'omnifunc'
 
-" syntastic crap
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " ctrp crap to speed it up
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
