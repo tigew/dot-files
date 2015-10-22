@@ -13,7 +13,6 @@ Plug 'honza/vim-snippets'                                          " Snippits
 Plug 'itchyny/lightline.vim'                                       " Badass bottom line in vim
 Plug 'jaxbot/semantic-highlight.vim'                               " Rainbow variables
 Plug 'jiangmiao/auto-pairs'                                        " Insert or delete brackets in pair
-Plug 'jistr/vim-nerdtree-tabs'                                     " Nerd tree for tabs, still debating if I want this at all
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' } " Lazy way to install fzf
 Plug 'junegunn/fzf.vim'                                            " fzf commands for vim beyond ':FZF'
 Plug 'kien/ctrlp.vim'                                              " Fuzzy file searcher
@@ -78,53 +77,57 @@ let g:choosewin_overlay_enable = 1
 
 " General (lag tab) {{{
 
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-set colorcolumn=80                            " 80 character column
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown " markdown magic, praise tpope"
+set colorcolumn=80                              " 80 character column
 
 if has("gui_macvim")
-    set fullscreen                            " force vim to load as full screen
+    set fullscreen                              " force vim to load as full screen macvim only
 endif
 
-set background=dark                           " makes shit dark as fuck
-colorscheme gotham                            " colortheme
-set nocompatible                              " Changes a lot of shit, refer to help if confused
-set foldmethod=marker                         " How folds are marked
-set linebreak                                 " Changed linebreak behavior, undetered if I want to keep
-set number                                    " Display line number
-set hidden                                    " Voodoo, refer to help if needed
-set laststatus=2                              " control option to how the status line is shown
-set t_Co=256                                  " number of colors, not sure if needed
-syntax on                                     " display syntax, no shit
-filetype plugin indent on                     " Not sure if needed
-set encoding=utf-8                            " set encoding to utf-8
-set fileencodings=utf-8                       " set encoding to utf-8
-set autoindent                                " preserves indent level when moving lines
-set smartindent                               " like the former but smarterer
-set cindent                                   " see help
-set expandtab                                 " uses spaces when tabing
-set smarttab                                  " Tab on drugs
-set shiftwidth=2                              " how many spaces tab does
-set softtabstop=2                             " how many spaces tab does
-set tabstop=2                                 " how many spaces tab does
-set wildignore=*.pyc                          " Global ignore list, this dosn't hurt nor seems to help
-set ignorecase                                " search related
-set smartcase                                 " overrides if capital is found
-set hlsearch                                  " hilight searches
-set incsearch                                 " search in realtime
-set shiftround                                " magic?
-set history=1000                              " History level saved
-set undolevels=1000                           " undo level saved
-set noswapfile                                " Gets rid of swap file, I'm going to be sad about this one day
-set nobackup                                  " see previous
-set linespace=3                               " number of pixels between lines
-set cursorline                                " Highlight current line
-set guifont=Source_Code_Pro_for_Powerline:h12 " font
-set splitbelow
-set splitright
+set background=dark                             " makes shit dark as fuck
+colorscheme gotham                              " colortheme
+set nocompatible                                " Changes a lot of shit, refer to help if confused
+set foldmethod=syntax                           " How folds are marked
+set linebreak                                   " Changed linebreak behavior, undetered if I want to keep
+set number                                      " Display line number
+set hidden                                      " Voodoo, refer to help if needed
+set laststatus=2                                " control option to how the status line is shown
+set t_Co=256                                    " number of colors, not sure if needed
+syntax on                                       " display syntax, no shit
+filetype plugin indent on                       " Not sure if needed
+set encoding=utf-8                              " set encoding to utf-8
+set fileencodings=utf-8                         " set encoding to utf-8
+set autoindent                                  " preserves indent level when moving lines
+set smartindent                                 " like the former but smarterer
+set cindent                                     " see help
+set expandtab                                   " uses spaces when tabing
+set smarttab                                    " Tab on drugs
+set shiftwidth=2                                " how many spaces tab does
+set softtabstop=2                               " how many spaces tab does
+set tabstop=2                                   " how many spaces tab does
+set wildignore=*.pyc                            " Global ignore list, this dosn't hurt nor seems to help
+set ignorecase                                  " search related
+set smartcase                                   " overrides if capital is found
+set hlsearch                                    " hilight searches
+set incsearch                                   " search in realtime
+set shiftround                                  " magic?
+set history=1000                                " History level saved
+set undolevels=1000                             " undo level saved
+set noswapfile                                  " Gets rid of swap file, I'm going to be sad about this one day
+set nobackup                                    " see previous
+set linespace=3                                 " number of pixels between lines
+set cursorline                                  " Highlight current line
+set guifont=Source_Code_Pro_for_Powerline:h12   " font
+set splitbelow                                  " moves cursor to split below
+set splitright                                  " moves cursor to split right
+autocmd FileType vim setlocal foldmethod=marker " set fold method for vimrc specificaly
+autocmd VimEnter * NERDTree                     " Toggle nerd tree on start up
+autocmd VimEnter * wincmd p                     " change focus to main window
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" section start line 81
 " }}}
 
 " Some Useful Key Mappings {{{
