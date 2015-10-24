@@ -33,6 +33,7 @@ Plug 'tpope/vim-surround'                                          " Self explai
 Plug 'vim-scripts/Align'                                           " Aligns on a specified character, look at repo for more info
 Plug 'wesQ3/vim-windowswap'                                        " Swap 2 window positions without ruining layout, not working
 Plug 'whatyouhide/vim-gotham'                                      " Sweet dark theme
+Plug 'scrooloose/syntastic'                                         " Syntax checker
 
 " plugins start line 5
 call plug#end()            " required
