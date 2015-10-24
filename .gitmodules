@@ -7,9 +7,6 @@
 [submodule "tools/omnisharp-server"]
 	path = tools/omnisharp-server
 	url = https://github.com/OmniSharp/omnisharp-server
-[submodule "/Users/tigew/.oh-my-zsh"]
-	path = /Users/tigew/.oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh
 [submodule "gotham-contrib"]
 	path = gotham-contrib
 	url = https://github.com/whatyouhide/gotham-contrib
