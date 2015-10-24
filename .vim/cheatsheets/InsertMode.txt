@@ -1,0 +1,34 @@
+3iGo - insert "Go" 3 times
+Ctrl-P - autocomplete
+Ctrl-X  Ctrl-O - omnicomplete
+
+Ctrl-y - duplicate line above, character-by-character
+Ctrl-e - duplicate line below, character-by-character
+
+Ctrl-t - indent line
+Ctrl-d - unindent line
+
+Ctrl-r {reg} - insert from register
+    Ctrl-r =2+2 - insert '4' from expression register
+    Ctrl-r =sqrt(4)
+
+    :help function-list
+
+inserting special characters, digraphs
+    Ctrl-K
+        Type approximation of the character, e.g.
+            a: for ä
+            14 for ¼
+        :dig to reference these
+    Ctrl-V
+
+editing while in insert mode
+    Ctrl-w - delete word before cursor
+    Ctrl-u - delete line before cursor
+    Ctrl-rx - insert contents of register x
+    Ctrl-t - increase line indent
+    Ctrl-d - decrease line indent
+
+leaving
+    <Esc>
+    Ctrl-[

@@ -1,0 +1,25 @@
+v - start selecting
+V - visual line mode (follow with j or k to select up or down)
+vib - select visually within brackets
+viB - select visually within braces
+viW - select visually within word (or URL or filename)
+v2ap - select 2 paragraphs visually
+gv - previous visual selection
+
+gv - reselect what was previously selected
+= - fix indentation on visually selected text
+
+search within visual selection
+    make the selection
+    hit escape
+    /\%Vwhat_to_search
+
+visual block mode
+    Ctrl-V
+    move around to make a selection, e.g - j
+    I to insert and type something
+    esc to exit the mode and insert the characters
+
+    c - change
+    d - delete
+    o - toggle to opposite

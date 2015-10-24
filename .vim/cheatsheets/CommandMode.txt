@@ -1,0 +1,155 @@
+Ctrl-b - beginning of command line
+Ctrl-e - end of command line
+Ctrl-w - delete word
+Ctrl-r - insert a register
+Ctrl-r Ctrl-w - insert word from under cursor
+Ctrl-f - edit using normal mode
+@: - repeat previous ex command
+
+:cd ~/Projects/myproject
+    cd %:h - change to the directory of the current file
+:pwd
+:so ~/.vimrc
+:!ls
+:sp a.txt - split window and edit a.txt
+:vsp b.txt
+
+:enew - edit a new buffer in the current window
+
+:r - read in a file
+    :185r read in line 185
+
+:w - write a file
+    :w test.txt
+
+:normal - do something as if in normal mode
+
+:put - put results on a new line
+    :put =4*2
+    :put =system('echo $RANDOM')
+
+set wrap! - toggle line wrapping
+set nowrap
+set wrap
+
+external command
+    :%! markdown - filter buffer via the external 'markdown' command
+    :%! tidy - filter buffer via html tidy
+    :!wc % - word count
+
+ranges
+    :15,30d - delete lines 15 - 30
+    :15,30m $ - move lines 15 - 30 to the end
+    :15,30>> - indent lines 15 - 30
+
+command history
+    : and the up key
+
+filename
+    use a % sign on the command line to denote the current file
+    :! echo %
+    :so %
+
+    :! markdown % > %:p:r.html
+    :help filename-modifiers
+
+search and replace
+    :%s/old/new - search and replace (first occurrence in each line)
+    :%s/old/new/g - search and replace globally
+    :%s/old/new/gc - search and replace with confirmations
+    d/pattern - delete 'pattern'
+    :5,12s/old/new/g - search and replace within range
+    :%s/\s\+$//e - strip whitespace from ends of lines
+
+    :%s/<br>\n<br>/\r<\/p>\r<p>/g - replace br with p
+
+    :g/test/d - delete all lines that match 'test'
+    :g!/test/d - delete all lines that don't match 'test'
+    :g/\t/d - delete all lines with a tab
+    :g/^$/d - delete blank lines
+    :g!/_/d - delete lines without underscores
+
+    replace line breaks
+        :%s/<Ctrl-V><Ctrl-M>//g
+        Where <Ctrl-V><Ctrl-M> means type Ctrl+V then Ctrl+M. 
+
+move
+    :m 12 - move current line to after line 12
+    :m 0 - move current line to before first line
+    :m $ - move current line to after last line 
+    :m7 - move current line to line 7
+    :4m7 - move line 4 to line 7
+    :4m$ - move line 4 the end of document
+
+copy
+    :3co7 - copy line 3 after line 7
+    :3t7 - same as above
+    :3t. - copy line 3 to after current line
+
+    :sort - sort lines alphabetically
+    :retab
+    :retab! - spaces to tabs
+    :changes
+    :dig - digraphs
+    :color - show current colorscheme
+
+:%TOhtml - generate HTML page that looks like the current view
+:w !sudo tee % - write current file with sudo, to avoid file permission error
+
+buffers
+    :buffers
+    :ls
+    :files
+
+    :b3 - display buffer 3
+    :bn - next buffer
+    :bp previous buffer
+    Ctrl-6 - switch between recent buffers
+
+    :bd
+    :bdel
+    :5,999bd
+
+    :%bd - delete all buffers
+
+    :bdel galleries <Ctrl-a> - complete all matches
+
+    status column
+        h is hidden
+        + means unsaved changes
+
+args
+    :args
+    :args ~/Dropbox/documents/unix.txt ~/Dropbox/documents/mac.txt
+    :args *.txt
+    :args `cat table_of_content.txt`
+    :args `find  - -type f`
+
+    argdo
+        :args *.txt
+        :argdo %s/\a/*/g
+        :argdo update
+
+        search and replace
+            :args `git grep -l findme`
+            :argdo %s/findme/replacement/gc
+            :argdo update
+
+grep (search across multiple files)
+    :vimgrep /pr( **/*.ctp
+
+quickfix window
+    :cw
+    :cnext
+    :cprev
+
+fileformat
+    :set ff? - show fileformat
+
+    convert in current buffer
+        :setlocal ff=unix
+        :w
+
+insert special characters
+    Ctrl-v
+        :%s/Ctrl-v Ctrl-m//g becomes :%s/^M//g

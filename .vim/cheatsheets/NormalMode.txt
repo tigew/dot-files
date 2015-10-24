@@ -1,0 +1,259 @@
+gg - beginning of document
+G - end of document
+    4G - go to line 4
+b - beginning of previous word
+B - beginnging of previous WORD (like the above except WORD can include punctuation)
+w - next word
+W - next WORD
+e - end of word
+E - end of WORD
+ge - end of previous word
+gE - end of previous WORD
+0 - beginning of line
+$ - end of line
+
++ - move down by line beginnings
+- - move up by line beginnings
+
+^ - first non-blank character
+g_ - last non-blank character
+'. - go to last edited line
+'' - previous cursor position
+
+gi - go to insert mode on previous cursor position
+gx - go to the URL under the cursor
+ga - show info about character under cursor
+Ctrl-G - show line info
+
+. - repeat previous command
+
+f - find character on line
+    3fq - third occurrence of 'q'
+F - find character on line, looking backwards
+t - go till the specified character
+T - go till the specified character, looking backwards
+; - repeat last f, F, t or T command
+, - repeat last f, F, t or T command, backwards
+
+* - next occurrence of word under cursor
+# - previous occurrence of word under cursor
+
+4| - jump to column 4
+
+H - top of screen (high)
+M - middle of screen
+L - bottom of screen (low)
+
+Ctrl-f - forward one screenful
+Ctrl-b - backward one screenful
+
+{ - previous empty line
+} - next empty line
+% - go to next matching parenthesis
+) - next sentence
+( - previous sentence
+]] - to next section (what a section is depends on the file type)
+][ - to next closing brace section
+[[ - to previous section
+[] - backwards to closing brace section
+]m - next method
+[m - previous method
+]M - end of next method
+[M - end of previous method
+
+Ctrl-o - retrace movements in file backwards
+Ctrl-i - retract movement in file forwards
+Ctrl-u - up half a page
+Ctrl-d - down half a page
+
+zz - center screen on cursor
+zt - align top of screen with cursor
+zb - align bottom of screen with cursor
+
+inplace editing
+    r - replace character
+    J - join line below to current one
+
+    ~ - toggle case
+    g~~ - toggle case of line
+    g~$ - toggle case until end of line
+
+    Ctrl-A - increment number beneath cursor
+    Ctrl-X - decrement number beneath cursor
+
+    == - autoindent
+    =% - autoindent within braces
+
+entering insert mode
+    i - insert mode
+    I - insert at beginning of line
+    s - substitute character (deletes the character under the cursor and goes into insert mode)
+    S - subsitute line (same as doing cc)
+    C - substitute from cursor to end of line
+    a - append after cursor
+    A - append at end of line
+    o - open (append) new line below
+    O - open (append) new line above        
+
+search
+    / - search
+        /hello - search for the word 'hello'
+        patterns
+            non-greedy match - /http.\{-}
+
+            including line endings
+                \n - a newline character (line ending)
+                \_s - a whitespace (space or tab) or newline character
+                \_^ - the beginning of a line (zero width)
+                \_$ - the end of a line (zero width)
+                \_. - any character including a newline
+
+    ? - search backwards
+    n - repeat search
+    N - repeat search in opposite direction
+    /\v'.+' - search using 'very magic mode', to avoid having to escape common characters
+    /\n\zs[a-z0-9] - use \zs flag to crop selection (in this case omitting the \n from the highlighted search result)   
+
+editing window
+    q/ - show and edit searches in a buffer
+    q: - show and edit history of commands
+    q? - show and edit backwards searches
+
+cc - change entire line
+dd - delete entire line
+    4dk - delete 4 lines upwards
+yy - yank line
+yw - yank word
+"zyy - yank line to buffer z
+c - change
+p - paste
+P - paste before cursor
+gp - paste and go to end of text
+gP - paste before cursor and go to end of text
+x - cut
+X - cut before cursor
+D - delete till end of line
+
+undo and redo
+    u - undo
+    U - hard undo (back to states before any edits were made)
+    Ctrl-r - redo
+    g- - go backwards in history tree
+    g+ - go forward in history tree
+    :earlier 20s
+
+combining operators, movements and counts
+    cw - change word
+    ci' - change everything inside quotes
+        ci"
+        ci<
+    cib - change everything inside brackets
+    ciB - change everything inside braces
+    ct_ - change till underscore
+    cT_ - change till underscore (backwards)
+    cit - change in tag (XML or HTML)
+
+    dk - delete line above
+    3dk - delete the 3 lines above
+
+windows
+    Ctrl-ww - switch window
+    Ctrl-wh - move cursor to left-hand window
+    Ctrl-wj - move cursor to upper window
+        2 Ctrl-wj - move cursor up 2 windows
+    Ctrl-wk - move cursor to upwards window
+    Ctrl-wl - move cursor to right-hand window
+    Ctrl-t - move cursor to top window
+    Ctrl-b - move cursor to bottom window
+    Ctrl-wq - quit window
+
+    Ctrl-= - even out window sizes
+    Ctrl-- - reduce window size
+    Ctrl-+ - increase window size
+    z6<CR> - make window 6 lines high
+
+    Ctrl-> - increase window width 
+    Ctrl-< - decrease window width
+
+    Ctrl-x - exchange the window with the next one
+
+    Ctrl-H - move window to be left column
+    Ctrl-J - move window to be bottom row
+    Ctrl-K - move window to be top row
+    Ctrl-L - move window to be right column
+
+switching tabs
+    Cmd-shift [ - previous tab
+    Cmd-shift ] - next tab
+
+q - record macro
+    qa - record marcro in register 'a'
+    do something special
+    press q again to stop recording
+    16@a - run the macro 16 times
+    "ap - paste the contents of the 'a' macro
+    :%normal @b - repeat until end of file
+    @@ - repeat last macro
+
+registers (any time you delete or yank text it goes into a register)
+    :reg - show contents of registers
+    "1p - paste from register 1.
+    "+p - paste from system clipboard
+
+marks
+    :marks - show marks
+
+    lowercase marks (mark positions and jump around in the current file)
+        create
+            ma
+            mb
+        jump to
+            'a
+            'b
+
+    uppercase marks (mark positions and jump around between different files)
+        create
+            mA
+            mB
+        jump to
+            'A
+            'B
+
+    :delm - delete a mark
+
+    jumping to marks
+        use ` to move position-wise and ' to move line-wise
+
+        `[ - jump to beginning of last yanked or changed text
+        `] - jump to end of last yanked or changed text
+        `< - jump to beginning of last visual selection
+        `> - jump to end of last visual selection
+
+tags
+    vim will read a 'tags' file automatically
+
+    Ctrl-] - jump to definition
+    Ctrl-t - jump back from definition
+
+    g] - list matching tags
+
+    :tag _initInputField - jump the function definition of _initInputField
+    :tag /placeholder - jump to tag matching the text 'placeholder'
+
+    :ptag placeholderUrl - open tag in preview window
+    :tselect afterSave - select from multiple matching tags
+    :tjump url - jump to unique tag, or list non-unique ones
+
+spell checking
+    :set spell
+    ]s - next spelling mistake
+    [s - previous spelling mistake
+    z= - bring up list of suggestions for word under cursor
+    1z= - replace word with first suggested spelling
+    zg - mark word as good in spell list
+    zw - mark word as bad in spell list
+
+    zug - undo adding as good
+    zuw - undo addings as bad
+
+    ~/.vim/spell/en.utf-8.add  
