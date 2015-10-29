@@ -136,6 +136,8 @@ set splitright                                  " moves cursor to split right
 autocmd FileType vim setlocal foldmethod=marker " set fold method for vimrc specificaly
 autocmd VimEnter * NERDTree                     " Toggle nerd tree on start up
 autocmd VimEnter * wincmd p                     " change focus to main window
+autocmd FileType c,cpp,h,hpp nested :TagbarOpen
+autocmd BufRead * normal zR
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
