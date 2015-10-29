@@ -23,6 +23,7 @@ Plug 'jaxbot/semantic-highlight.vim'                               " Rainbow var
 Plug 'jiangmiao/auto-pairs'                                        " Insert or delete brackets in pair
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' } " Lazy way to install fzf
 Plug 'junegunn/fzf.vim'                                            " fzf commands for vim beyond ':FZF'
+Plug 'junegunn/vim-easy-align'                                     " more aligning
 Plug 'kien/ctrlp.vim'                                              " Fuzzy file searcher
 Plug 'kristijanhusak/vim-multiple-cursors'                         " Name is self explainitory
 Plug 'majutsushi/tagbar'                                           " ctags view for files
@@ -30,20 +31,21 @@ Plug 'marcweber/vim-addon-mw-utils'                                " I'm not rea
 Plug 'mattn/emmet-vim'                                             " HTML snippet short cut, see git repo for more info
 Plug 'osyo-manga/vim-over'                                         " Makes find and replace in vim god mode by showing preview
 Plug 'scrooloose/nerdtree'                                         " File explorer
+Plug 'scrooloose/syntastic'                                        " Syntax checker
 Plug 'skammer/vim-css-color'                                       " Displays the color of the css on it itself
 Plug 'szw/vim-ctrlspace'                                           " Better tabswitcher, consider changing to leader
 Plug 't9md/vim-choosewin'                                          " Much faster split navigation
 Plug 'tomtom/tlib_vim'                                             " Likely needed for another plugin, don't remove
 Plug 'tpope/vim-commentary'                                        " Comments on drugs
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'                                          " Git wrapper for vim
 Plug 'tpope/vim-markdown'                                          " Markdown stuffs for vim
 Plug 'tpope/vim-surround'                                          " Self explainitory, surround stuff easier
 Plug 'vim-scripts/Align'                                           " Aligns on a specified character, look at repo for more info
 Plug 'wesQ3/vim-windowswap'                                        " Swap 2 window positions without ruining layout, not working
 Plug 'whatyouhide/vim-gotham'                                      " Sweet dark theme
-Plug 'scrooloose/syntastic'                                         " Syntax checker
 
-" plugins start line 5
+" plugins start line 13
 call plug#end()            " required
 " }}}
 
@@ -76,6 +78,12 @@ let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 " Choose win (Big ass letter switching)
 nmap  -  <Plug>(choosewin)
 let g:choosewin_overlay_enable = 1
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 " }}}
 
 " General (lag tab) {{{
