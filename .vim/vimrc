@@ -24,6 +24,8 @@ Plug 'jiangmiao/auto-pairs'                                        " Insert or d
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' } " Lazy way to install fzf
 Plug 'junegunn/fzf.vim'                                            " fzf commands for vim beyond ':FZF'
 Plug 'junegunn/vim-easy-align'                                     " more aligning
+Plug 'junegunn/vim-fnr'                                            " Interactive find and replace, <Leader>R
+Plug 'junegunn/vim-pseudocl'                                       " Library for fnr
 Plug 'kien/ctrlp.vim'                                              " Fuzzy file searcher
 Plug 'kristijanhusak/vim-multiple-cursors'                         " Name is self explainitory
 Plug 'majutsushi/tagbar'                                           " ctags view for files
@@ -37,7 +39,7 @@ Plug 'szw/vim-ctrlspace'                                           " Better tabs
 Plug 't9md/vim-choosewin'                                          " Much faster split navigation
 Plug 'tomtom/tlib_vim'                                             " Likely needed for another plugin, don't remove
 Plug 'tpope/vim-commentary'                                        " Comments on drugs
-Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-dispatch'                                          " Background :Make and other things
 Plug 'tpope/vim-fugitive'                                          " Git wrapper for vim
 Plug 'tpope/vim-markdown'                                          " Markdown stuffs for vim
 Plug 'tpope/vim-surround'                                          " Self explainitory, surround stuff easier
