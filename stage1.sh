@@ -62,6 +62,5 @@ brew cask install font-source-code-pro-for-powerline
 # zsh
 chsh -s /bin/zsh
 
-# Vim stuff, do this last
-cd ~/.vim && curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && mvim +PlugInstall
+# Vim stuff, do this last - Will have to hit enter
+mvim
