@@ -32,13 +32,13 @@ Plug 'majutsushi/tagbar'                                           " ctags view 
 Plug 'marcweber/vim-addon-mw-utils'                                " I'm not really sure, but it's not hurting anything
 Plug 'mattn/emmet-vim'                                             " HTML snippet short cut, see git repo for more info
 Plug 'osyo-manga/vim-over'                                         " Makes find and replace in vim god mode by showing preview
+Plug 'scrooloose/nerdcommenter'                                    " Better comments on drugs
 Plug 'scrooloose/nerdtree'                                         " File explorer
 Plug 'scrooloose/syntastic'                                        " Syntax checker
 Plug 'skammer/vim-css-color'                                       " Displays the color of the css on it itself
 Plug 'szw/vim-ctrlspace'                                           " Better tabswitcher, consider changing to leader
 Plug 't9md/vim-choosewin'                                          " Much faster split navigation
 Plug 'tomtom/tlib_vim'                                             " Likely needed for another plugin, don't remove
-Plug 'tpope/vim-commentary'                                        " Comments on drugs
 Plug 'tpope/vim-dispatch'                                          " Background :Make and other things
 Plug 'tpope/vim-fugitive'                                          " Git wrapper for vim
 Plug 'tpope/vim-markdown'                                          " Markdown stuffs for vim
