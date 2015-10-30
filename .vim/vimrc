@@ -97,6 +97,7 @@ if has("gui_macvim")
     set fullscreen                              " force vim to load as full screen macvim only
 endif
 
+syntax on                                       " display syntax, no shit
 autocmd FileType c,cpp,h,hpp nested :TagbarOpen " auto open tagbar on certain file types
 autocmd FileType vim setlocal foldmethod=marker " set fold method for vimrc specificaly
 autocmd VimEnter * NERDTree                     " Toggle nerd tree on start up
@@ -137,7 +138,6 @@ set tabstop=2                                   " how many spaces tab does
 set undolevels=1000                             " undo level saved
 set updatetime=750                              " sets the period after you stop typeing plugins can act
 set wildignore=*.pyc                            " Global ignore list, this dosn't hurt nor seems to help
-syntax on                                       " display syntax, no shit
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
