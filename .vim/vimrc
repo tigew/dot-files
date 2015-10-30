@@ -97,52 +97,52 @@ if has("gui_macvim")
     set fullscreen                              " force vim to load as full screen macvim only
 endif
 
-set background=dark                             " makes shit dark as fuck
-colorscheme gotham                              " colortheme
-set nocompatible                                " Changes a lot of shit, refer to help if confused
-set foldmethod=syntax                           " How folds are marked
-set linebreak                                   " Changed linebreak behavior, undetered if I want to keep
-set number                                      " Display line number
-set hidden                                      " Voodoo, refer to help if needed
-set laststatus=2                                " control option to how the status line is shown
-set t_Co=256                                    " number of colors, not sure if needed
-syntax on                                       " display syntax, no shit
-filetype plugin indent on                       " Not sure if needed
-set encoding=utf-8                              " set encoding to utf-8
-set fileencodings=utf-8                         " set encoding to utf-8
-set autoindent                                  " preserves indent level when moving lines
-set smartindent                                 " like the former but smarterer
-set cindent                                     " see help
-set expandtab                                   " uses spaces when tabing
-set smarttab                                    " Tab on drugs
-set shiftwidth=2                                " how many spaces tab does
-set softtabstop=2                               " how many spaces tab does
-set tabstop=2                                   " how many spaces tab does
-set wildignore=*.pyc                            " Global ignore list, this dosn't hurt nor seems to help
-set ignorecase                                  " search related
-set smartcase                                   " overrides if capital is found
-set hlsearch                                    " hilight searches
-set incsearch                                   " search in realtime
-set shiftround                                  " magic?
-set history=1000                                " History level saved
-set undolevels=1000                             " undo level saved
-set noswapfile                                  " Gets rid of swap file, I'm going to be sad about this one day
-set nobackup                                    " see previous
-set linespace=3                                 " number of pixels between lines
-set cursorline                                  " Highlight current line
-set guifont=Source_Code_Pro_for_Powerline:h12   " font
-set splitbelow                                  " moves cursor to split below
-set splitright                                  " moves cursor to split right
+autocmd FileType c,cpp,h,hpp nested :TagbarOpen " auto open tagbar on certain file types
 autocmd FileType vim setlocal foldmethod=marker " set fold method for vimrc specificaly
 autocmd VimEnter * NERDTree                     " Toggle nerd tree on start up
 autocmd VimEnter * wincmd p                     " change focus to main window
-autocmd FileType c,cpp,h,hpp nested :TagbarOpen
-autocmd BufRead * normal zR
+colorscheme gotham                              " colortheme
+filetype plugin indent on                       " Not sure if needed
+set autoindent                                  " preserves indent level when moving lines
+set background=dark                             " makes shit dark as fuck
+set cindent                                     " see help
+set cursorline                                  " Highlight current line
+set encoding=utf-8                              " set encoding to utf-8
+set expandtab                                   " uses spaces when tabing
+set fileencodings=utf-8                         " set encoding to utf-8
+set foldmethod=marker                           " How folds are marked
+set guifont=Source_Code_Pro_for_Powerline:h12   " font
+set hidden                                      " Voodoo, refer to help if needed
+set history=1000                                " History level saved
+set hlsearch                                    " hilight searches
+set ignorecase                                  " search related
+set incsearch                                   " search in realtime
+set laststatus=2                                " control option to how the status line is shown
+set linebreak                                   " Changed linebreak behavior, undetered if I want to keep
+set linespace=3                                 " number of pixels between lines
+set nobackup                                    " see previous
+set nocompatible                                " Changes a lot of shit, refer to help if confused
+set noswapfile                                  " Gets rid of swap file, I'm going to be sad about this one day
+set number                                      " Display line number
+set shiftround                                  " magic?
+set shiftwidth=2                                " how many spaces tab does
+set smartcase                                   " overrides if capital is found
+set smartindent                                 " like the former but smarterer
+set smarttab                                    " Tab on drugs
+set softtabstop=2                               " how many spaces tab does
+set splitbelow                                  " moves cursor to split below
+set splitright                                  " moves cursor to split right
+set t_Co=256                                    " number of colors, not sure if needed
+set tabstop=2                                   " how many spaces tab does
+set undolevels=1000                             " undo level saved
+set updatetime=750                              " sets the period after you stop typeing plugins can act
+set wildignore=*.pyc                            " Global ignore list, this dosn't hurt nor seems to help
+syntax on                                       " display syntax, no shit
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" section start line 81
+" section start line 100
 " }}}
 
 " Some Useful Key Mappings {{{
