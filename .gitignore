@@ -16,6 +16,7 @@
 .eclim/.eclimd_instances
 .fzf/
 .gem/
+.lesshst
 .local/
 .mono/
 .muttator/
