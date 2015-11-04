@@ -88,7 +88,7 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 " }}}
 
-" General (lag tab) {{{
+" General (lag tab, do not sort these) {{{
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown " markdown magic, praise tpope"
 set colorcolumn=80                              " 80 character column
