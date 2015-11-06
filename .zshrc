@@ -6,6 +6,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias gsmu='git submodule foreach git pull origin master'
 alias eclim='/opt/homebrew-cask/Caskroom/eclipse-java/4.5.1/Eclipse.app/Contents/Eclipse/eclimd'
+eval $(thefuck --alias)
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
