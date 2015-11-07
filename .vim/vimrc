@@ -178,6 +178,9 @@ vnoremap < <<CR>gv
 nmap <silent> <Leader>s :split<CR>
 nmap <silent> <Leader>v :vsplit<CR>
 
+" Inserts current date and time, and comments it out
+nmap <Leader>t "=strftime("%c")<CR>P<Leader>cc
+
 "Mapping to open vimrc
 command Vrc e ~/.vim/vimrc
 
