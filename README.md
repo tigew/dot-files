@@ -1,11 +1,11 @@
 # dot-files
 mah dotfiles
 
-### Install the old fasion way
+### Install the old fashion way
 
-| App Store          | Download from Internet | 
+| App Store          | Download from Internet |
 |:------------------:|:----------------------:|
-| Home Budget Light  | MightyText             | 
+| Home Budget Light  | MightyText             |
 | PDF Reader X       | Popcorn                |
 | Xcode              | Qt                     |
 |                    | Xamarin                |
@@ -14,7 +14,7 @@ mah dotfiles
 
 I wish I could clone to '.' but git isn't a fan.
 
-```bash 
+```bash
 git init
 git remote add origin https://github.com/travis2861/dot-files.git
 git fetch

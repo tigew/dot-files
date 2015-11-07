@@ -138,6 +138,8 @@ autocmd FileType vim setlocal foldmethod=marker " set fold method for vimrc spec
 autocmd VimEnter * NERDTree                     " Toggle nerd tree on start up
 autocmd VimEnter * wincmd p                     " change focus to main window
 autocmd FileType c,cpp,h,hpp nested :TagbarOpen
+autocmd FileType text setlocal spell spelllang=en_us
+autocmd FileType help setlocal nospell
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
