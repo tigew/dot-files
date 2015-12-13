@@ -50,6 +50,18 @@ brew cask install utorrent --verbose
 brew cask install visual-studio-code --verbose
 brew cask install vlc --verbose
 brew cask install xquartz --verbose
+brew cask install appcleaner --verbose
+brew cask install daisydisk --verbose
+brew cask install eclipse-java --verbose
+brew cask install fishapp --verbose
+brew cask install iterm2 --verbose
+brew cask install java --verbose
+brew cask install java6 --verbose
+brew cask install league-of-legends --verbose
+brew cask install minecraft --verbose
+brew cask install teamspeak-client --verbose
+brew cask install teamviewer --verbose
+brew cask install virtualbox --verbose
 
 # In between stuff
 defaults write org.vim.MacVim MMNativeFullScreen 0 # fix for macvim fullscreen
