@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<setup:LocationCatalog
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0">
-  <workspace>
-    <key href="file:/Users/tigew/Documents/workspace/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
-  </workspace>
-</setup:LocationCatalog>
