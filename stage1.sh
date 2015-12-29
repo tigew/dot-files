@@ -41,7 +41,6 @@ brew cask install minecraft --verbose
 brew cask install mono-mdk --verbose
 brew cask install private-internet-access --verbose
 brew cask install pycharm-ce --verbose
-brew cask install razer-synapse --verbose
 brew cask install silverlight --verbose
 brew cask install skype --verbose
 brew cask install smartgit --verbose
