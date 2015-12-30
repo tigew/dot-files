@@ -47,7 +47,7 @@ Plug 'vim-scripts/Align'                                           " Aligns on a
 Plug 'wesQ3/vim-windowswap'                                        " Swap 2 window positions without ruining layout, not working
 Plug 'whatyouhide/vim-gotham'                                      " Sweet dark theme
 Plug 'rizzatti/dash.vim'                                           " Dash interface for vim
-Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight'                            " More highlighting for C++
 
 " plugins start line 13
 call plug#end()            " required
