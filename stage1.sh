@@ -18,13 +18,11 @@ brew cask install appcleaner --verbose
 brew cask install atom --verbose
 brew cask install brackets --verbose
 brew cask install cakebrew --verbose
-brew cask install copy --verbose
 brew cask install daisydisk --verbose
 brew cask install dash --verbose
 brew cask install emacs --verbose
 brew cask install evernote --verbose
 brew cask install firefox --verbose
-brew cask install fishapp --verbose
 brew cask install github-desktop --verbose
 brew cask install gitup --verbose
 brew cask install gog-galaxy --verbose
@@ -33,7 +31,6 @@ brew cask install iterm2 --verbose
 brew cask install java --verbose
 brew cask install java6 --verbose
 brew cask install keepassx --verbose
-brew cask install league-of-legends --verbose
 brew cask install libreoffice --verbose
 brew cask install macdown --verbose
 brew cask install macvim --verbose
@@ -48,13 +45,10 @@ brew cask install spectacle --verbose
 brew cask install spotify --verbose
 brew cask install steam --verbose
 brew cask install sublime-text --verbose
-brew cask install syncthing --verbose
-brew cask install teamspeak-client --verbose
 brew cask install teamviewer --verbose
 brew cask install the-unarchiver --verbose
 brew cask install thunderbird --verbose
 brew cask install tower --verbose
-brew cask install unified-remote --verbose
 brew cask install utorrent --verbose
 brew cask install virtualbox --verbose
 brew cask install visual-studio-code --verbose
