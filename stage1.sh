@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Manual clones
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/whatyouhide/gotham-contrib ~/gotham-contrib
 
 # brew
@@ -34,6 +34,7 @@ brew cask install gitup --verbose
 brew cask install gog-galaxy --verbose
 brew cask install intellij-idea --verbose
 brew cask install iterm2 --verbose
+brew cask install iterm2 --verbose
 brew cask install java --verbose
 brew cask install java6 --verbose
 brew cask install keepassx --verbose
@@ -45,7 +46,6 @@ brew cask install mono-mdk --verbose
 brew cask install private-internet-access --verbose
 brew cask install pycharm --verbose
 brew cask install silverlight --verbose
-brew cask install iterm2 --verbose
 brew cask install skype --verbose
 brew cask install smartgit --verbose
 brew cask install spectacle --verbose

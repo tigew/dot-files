@@ -21,6 +21,7 @@ Plug 'honza/vim-snippets'                                          " Snippits
 Plug 'itchyny/lightline.vim'                                       " Badass bottom line in vim
 Plug 'jaxbot/semantic-highlight.vim'                               " Rainbow variables
 Plug 'jiangmiao/auto-pairs'                                        " Insert or delete brackets in pair
+Plug 'jreybert/vimagit'                                            " Magit for vim
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' } " Lazy way to install fzf
 Plug 'junegunn/fzf.vim'                                            " fzf commands for vim beyond ':FZF'
 Plug 'junegunn/vim-easy-align'                                     " more aligning
@@ -31,7 +32,9 @@ Plug 'kristijanhusak/vim-multiple-cursors'                         " Name is sel
 Plug 'majutsushi/tagbar'                                           " ctags view for files
 Plug 'marcweber/vim-addon-mw-utils'                                " I'm not really sure, but it's not hurting anything
 Plug 'mattn/emmet-vim'                                             " HTML snippet short cut, see git repo for more info
+Plug 'octol/vim-cpp-enhanced-highlight'                            " More highlighting for C++
 Plug 'osyo-manga/vim-over'                                         " Makes find and replace in vim god mode by showing preview
+Plug 'rizzatti/dash.vim'                                           " Dash interface for vim
 Plug 'scrooloose/nerdcommenter'                                    " Better comments on drugs
 Plug 'scrooloose/nerdtree'                                         " File explorer
 Plug 'scrooloose/syntastic'                                        " Syntax checker
@@ -46,9 +49,6 @@ Plug 'tpope/vim-surround'                                          " Self explai
 Plug 'vim-scripts/Align'                                           " Aligns on a specified character, look at repo for more info
 Plug 'wesQ3/vim-windowswap'                                        " Swap 2 window positions without ruining layout, not working
 Plug 'whatyouhide/vim-gotham'                                      " Sweet dark theme
-Plug 'rizzatti/dash.vim'                                           " Dash interface for vim
-Plug 'octol/vim-cpp-enhanced-highlight'                            " More highlighting for C++
-Plug 'jreybert/vimagit'
 
 " plugins start line 13
 call plug#end()            " required
