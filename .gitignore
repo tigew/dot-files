@@ -37,6 +37,9 @@
 .zprofile
 .zsh-update
 .zsh_history
+.oh-my-zsh/
+gotham-contrib/
+.emacs.d/
 Applications
 Copy/
 Desktop/
