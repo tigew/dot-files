@@ -19,6 +19,7 @@ brew install thefuck --verbose
 brew install caskroom/cask/brew-cask
 
 brew cask install alfred --verbose
+brew cask install google-drive --verbose
 brew cask install android-studio --verbose
 brew cask install appcleaner --verbose
 brew cask install atom --verbose
