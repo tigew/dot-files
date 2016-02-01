@@ -48,6 +48,7 @@ Plug 'wesQ3/vim-windowswap'                                        " Swap 2 wind
 Plug 'whatyouhide/vim-gotham'                                      " Sweet dark theme
 Plug 'rizzatti/dash.vim'                                           " Dash interface for vim
 Plug 'octol/vim-cpp-enhanced-highlight'                            " More highlighting for C++
+Plug 'jreybert/vimagit'
 
 " plugins start line 13
 call plug#end()            " required

@@ -1,11 +1,14 @@
 #!/bin/sh
 
+# Manual clones
+
 # brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install ag --verbose
 brew install cmake --verbose
 brew install ctags --verbose
+brew install thefuck --verbose
 
 # brew cask add if checks with tags so we can do
 # an all install or just a force update sections
@@ -26,7 +29,7 @@ brew cask install firefox --verbose
 brew cask install github-desktop --verbose
 brew cask install gitup --verbose
 brew cask install gog-galaxy --verbose
-brew cask install intellij-idea-ce --verbose
+brew cask install intellij-idea --verbose
 brew cask install iterm2 --verbose
 brew cask install java --verbose
 brew cask install java6 --verbose
@@ -37,7 +40,7 @@ brew cask install macvim --verbose
 brew cask install minecraft --verbose
 brew cask install mono-mdk --verbose
 brew cask install private-internet-access --verbose
-brew cask install pycharm-ce --verbose
+brew cask install pycharm --verbose
 brew cask install silverlight --verbose
 brew cask install skype --verbose
 brew cask install smartgit --verbose
@@ -60,8 +63,9 @@ defaults write org.vim.MacVim MMNativeFullScreen 0 # fix for macvim fullscreen
 
 # brew cask fonts
 brew tap caskroom/fonts
-brew cask install font-inconsolata-for-powerline
-brew cask install font-source-code-pro-for-powerline
+brew cask install font-inconsolata
+brew cask install font-source-code-pro
+brew cask install font-hack
 
 # zsh
 chsh -s /bin/zsh
