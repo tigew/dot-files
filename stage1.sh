@@ -45,6 +45,7 @@ brew cask install mono-mdk --verbose
 brew cask install private-internet-access --verbose
 brew cask install pycharm --verbose
 brew cask install silverlight --verbose
+brew cask install iterm2 --verbose
 brew cask install skype --verbose
 brew cask install smartgit --verbose
 brew cask install spectacle --verbose
