@@ -9,6 +9,10 @@ git submodule update --init --recursive
 # brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# brew taps
+brew tap caskroom/versions
+brew tap caskroom/fonts
+
 brew install ag --verbose
 brew install cmake --verbose
 brew install ctags --verbose
@@ -22,8 +26,8 @@ brew install caskroom/cask/brew-cask
 
 brew cask install alfred --verbose
 brew cask install google-drive --verbose
-brew cask install google-chrome --verbose
-brew cask install android-studio --verbose
+brew cask install google-chrome-canary --verbose
+brew cask install android-studio-canary --verbose
 brew cask install appcleaner --verbose
 brew cask install atom --verbose
 brew cask install brackets --verbose
@@ -36,9 +40,8 @@ brew cask install firefox --verbose
 brew cask install github-desktop --verbose
 brew cask install gitup --verbose
 brew cask install gog-galaxy --verbose
-brew cask install intellij-idea --verbose
+brew cask install intellij-idea-ce --verbose
 brew cask install java --verbose
-brew cask install java6 --verbose
 brew cask install keepassx --verbose
 brew cask install libreoffice --verbose
 brew cask install macdown --verbose
@@ -46,7 +49,7 @@ brew cask install macvim --verbose
 brew cask install minecraft --verbose
 brew cask install mono-mdk --verbose
 brew cask install private-internet-access --verbose
-brew cask install pycharm --verbose
+brew cask install pycharm-ce --verbose
 brew cask install silverlight --verbose
 brew cask install skype --verbose
 brew cask install smartgit --verbose
@@ -65,7 +68,6 @@ brew cask install xquartz --verbose
 defaults write org.vim.MacVim MMNativeFullScreen 0 # fix for macvim fullscreen
 
 # brew cask fonts
-brew tap caskroom/fonts
 brew cask install font-inconsolata
 brew cask install font-source-code-pro
 brew cask install font-hack
