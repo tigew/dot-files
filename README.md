@@ -20,5 +20,4 @@ git remote add origin https://github.com/travis2861/dot-files.git
 git fetch
 git checkout -t origin/master
 git pull
-git submodule update --init --recursive
 ```

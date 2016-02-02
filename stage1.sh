@@ -4,6 +4,7 @@
 git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/whatyouhide/gotham-contrib ~/gotham-contrib
+git submodule update --init --recursive
 
 # brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
