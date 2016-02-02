@@ -37,8 +37,6 @@ brew cask install github-desktop --verbose
 brew cask install gitup --verbose
 brew cask install gog-galaxy --verbose
 brew cask install intellij-idea --verbose
-brew cask install iterm2 --verbose
-brew cask install iterm2 --verbose
 brew cask install java --verbose
 brew cask install java6 --verbose
 brew cask install keepassx --verbose
