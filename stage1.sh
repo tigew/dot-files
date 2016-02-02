@@ -13,6 +13,7 @@ brew install ag --verbose
 brew install cmake --verbose
 brew install ctags --verbose
 brew install thefuck --verbose
+brew install neovim/neovim/neovim --verbose
 
 # brew cask add if checks with tags so we can do
 # an all install or just a force update sections
