@@ -10,6 +10,7 @@ endif
 
 call plug#begin()
 
+Plug 'junegunn/gv.vim'
 Plug 'FelikZ/ctrlp-py-matcher'                                     " CrtlP matcher writen in python
 Plug 'SirVer/ultisnips'                                            " Snippits
 Plug 'Valloric/YouCompleteMe'                                      " Realtime autocomplete engine for vim
