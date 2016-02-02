@@ -133,7 +133,7 @@ set noswapfile                                  " Gets rid of swap file, I'm goi
 set nobackup                                    " see previous
 set linespace=3                                 " number of pixels between lines
 set cursorline                                  " Highlight current line
-set guifont=Source_Code_Pro_for_Powerline:h12   " font
+set guifont=Hack\ Regular:h12   " font
 set splitbelow                                  " moves cursor to split below
 set splitright                                  " moves cursor to split right
 autocmd FileType vim setlocal foldmethod=marker " set fold method for vimrc specificaly
