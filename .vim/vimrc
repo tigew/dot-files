@@ -67,6 +67,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 let g:tagbar_ctags_bin = '/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 map <Leader>[ :NERDTreeToggle<CR>
 nmap <Leader>] :TagbarToggle<CR>
+nnoremap <silent><Leader><Space> :CtrlSpace<CR>
 
 
 " ctrp crap to speed it up
