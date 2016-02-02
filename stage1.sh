@@ -54,14 +54,11 @@ brew cask install smartgit --verbose
 brew cask install spectacle --verbose
 brew cask install spotify --verbose
 brew cask install steam --verbose
-brew cask install sublime-text --verbose
 brew cask install teamviewer --verbose
 brew cask install the-unarchiver --verbose
 brew cask install thunderbird --verbose
-brew cask install tower --verbose
 brew cask install utorrent --verbose
 brew cask install virtualbox --verbose
-brew cask install visual-studio-code --verbose
 brew cask install vlc --verbose
 brew cask install xquartz --verbose
 
