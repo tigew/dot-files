@@ -71,6 +71,10 @@ brew cask install font-inconsolata
 brew cask install font-source-code-pro
 brew cask install font-hack
 
+# Brew cleanup to reclaim that which is mine
+brew cleanup --verbose
+brew cask cleanup --verbose
+
 # zsh
 chsh -s /bin/zsh
 
