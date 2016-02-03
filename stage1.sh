@@ -12,6 +12,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # brew taps
 brew tap caskroom/versions
 brew tap caskroom/fonts
+#TODO(Travis) might have to add a tap for caskroom
 
 brew install ag --verbose
 brew install cmake --verbose
@@ -21,8 +22,6 @@ brew install neovim/neovim/neovim --verbose
 
 # brew cask add if checks with tags so we can do
 # an all install or just a force update sections
-
-brew install caskroom/cask/brew-cask
 
 brew cask install alfred --verbose
 brew cask install google-drive --verbose
