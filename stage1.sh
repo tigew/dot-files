@@ -63,9 +63,6 @@ brew cask install virtualbox --verbose
 brew cask install vlc --verbose
 brew cask install xquartz --verbose
 
-# In between stuff
-defaults write org.vim.MacVim MMNativeFullScreen 0 # fix for macvim fullscreen
-
 # brew cask fonts
 brew cask install font-inconsolata
 brew cask install font-source-code-pro
@@ -74,6 +71,9 @@ brew cask install font-hack
 # Brew cleanup to reclaim that which is mine
 brew cleanup --verbose
 brew cask cleanup --verbose
+
+# In between stuff
+defaults write org.vim.MacVim MMNativeFullScreen 0 # fix for macvim fullscreen
 
 # zsh
 chsh -s /bin/zsh
