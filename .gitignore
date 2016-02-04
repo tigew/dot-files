@@ -3,6 +3,9 @@
 .IdeaIC*
 .IntelliJIdea15/
 PycharmProjects/
+.AndroidStudioPreview*/
+.gradle/
+AndroidStudioProjects/
 .PyCharm*
 .Trash
 Google Drive/
