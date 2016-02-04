@@ -23,6 +23,7 @@ brew install neovim/neovim/neovim --verbose
 # brew cask add if checks with tags so we can do
 # an all install or just a force update sections
 
+brew cask install gitkraken -- verbose
 brew cask install alfred --verbose
 brew cask install google-drive --verbose
 brew cask install google-chrome-canary --verbose

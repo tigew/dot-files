@@ -3,6 +3,7 @@
 .IdeaIC*
 .IntelliJIdea15/
 PycharmProjects/
+.gitkraken/
 .AndroidStudioPreview*/
 .gradle/
 AndroidStudioProjects/
