@@ -10,7 +10,7 @@ endif
 
 call plug#begin()
 
-Plug 'hmhinz/vim-startify'
+Plug 'mhinz/vim-startify'
 Plug 'junegunn/gv.vim'
 Plug 'FelikZ/ctrlp-py-matcher'                                     " CrtlP matcher writen in python
 Plug 'SirVer/ultisnips'                                            " Snippits
