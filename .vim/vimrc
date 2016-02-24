@@ -138,6 +138,7 @@ set cursorline                                  " Highlight current line
 set guifont=Hack\ Regular:h12   " font
 set splitbelow                                  " moves cursor to split below
 set splitright                                  " moves cursor to split right
+set backspace=indent,eol,start
 autocmd FileType vim setlocal foldmethod=marker " set fold method for vimrc specificaly
 " autocmd VimEnter * NERDTree                     " Toggle nerd tree on start up
 " autocmd VimEnter * wincmd p                     " change focus to main window
