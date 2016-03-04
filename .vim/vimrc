@@ -9,9 +9,9 @@ endif
 " Plugins {{{
 
 call plug#begin()
-
-Plug 'mhinz/vim-startify'
-Plug 'junegunn/gv.vim'
+Plug 'fatih/vim-go'                                                " Vim go crap
+Plug 'mhinz/vim-startify'                                          " Start page for vim
+Plug 'junegunn/gv.vim'                                             " git browser
 Plug 'FelikZ/ctrlp-py-matcher'                                     " CrtlP matcher writen in python
 Plug 'SirVer/ultisnips'                                            " Snippits
 Plug 'Valloric/YouCompleteMe'                                      " Realtime autocomplete engine for vim
