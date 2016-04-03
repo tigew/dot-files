@@ -14,7 +14,7 @@ Plug 'mhinz/vim-startify'                                          " Start page 
 Plug 'junegunn/gv.vim'                                             " git browser
 Plug 'FelikZ/ctrlp-py-matcher'                                     " CrtlP matcher writen in python
 Plug 'SirVer/ultisnips'                                            " Snippits
-Plug 'Valloric/YouCompleteMe'                                      " Realtime autocomplete engine for vim
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }      " Realtime autocomplete engine for vim
 Plug 'airblade/vim-gitgutter'                                      " Displays what lines have changed (git)
 Plug 'easymotion/vim-easymotion'                                   " jump search in vim, spacemacs spc-spc-letter
 Plug 'ervandew/supertab'                                           " Allows the use of tab to do completions
