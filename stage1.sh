@@ -23,7 +23,7 @@ brew install neovim/neovim/neovim --verbose
 # brew cask add if checks with tags so we can do
 # an all install or just a force update sections
 
-brew cask install gitkraken -- verbose
+brew cask install gitkraken --verbose
 brew cask install alfred --verbose
 brew cask install google-drive --verbose
 brew cask install google-chrome-canary --verbose
@@ -65,9 +65,9 @@ brew cask install vlc --verbose
 brew cask install xquartz --verbose
 
 # brew cask fonts
-brew cask install font-inconsolata
-brew cask install font-source-code-pro
-brew cask install font-hack
+#brew cask install font-inconsolata
+#brew cask install font-source-code-pro
+#brew cask install font-hack
 
 # Brew cleanup to reclaim that which is mine
 brew cleanup --verbose

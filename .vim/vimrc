@@ -99,7 +99,7 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown " markdown magic, prai
 set colorcolumn=80                              " 80 character column
 
 if has("gui_macvim")
-    set fullscreen                              " force vim to load as full screen macvim only
+  set fullscreen
 endif
 
 set background=dark                             " makes shit dark as fuck
