@@ -9,12 +9,7 @@ endif
 " Plugins {{{
 
 call plug#begin()
-"Plug 'fatih/vim-go'                                                " Vim go crap
-"Plug 'octol/vim-cpp-enhanced-highlight'                            " More highlighting for C++
-"Plug 'mattn/emmet-vim'                                             " HTML snippet short cut, see git repo for more info
-"Plug 'skammer/vim-css-color'                                       " Displays the color of the css on it itself
-"Plug 'tpope/vim-markdown'                                          " Markdown stuffs for vim
-Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'                                        " never be without
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }      " Realtime autocomplete engine for vim
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' } " Lazy way to install fzf
