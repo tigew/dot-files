@@ -1,4 +1,9 @@
 .CFUserTextEncoding
+.IdentityService/
+.ServiceHub/
+.bash_sessions/
+.docker/
+MusicBot/
 .vscode/
 .DS_Store
 .IdeaIC*
